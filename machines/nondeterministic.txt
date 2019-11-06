@@ -1,0 +1,18 @@
+states 7
+s0
+s1
+s2
+s3 
+s4
+s5 +
+s6
+alphabet a
+s0 a s1 a R
+s0 a s2 a R
+s2 a s3 a R
+s1 a s3 a R
+s3 a s4 a R
+s4 a s5 a R
+s3 epsilon s6
+s6 a s6 a R
+s6 epsilon s0

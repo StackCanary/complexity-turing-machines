@@ -1,0 +1,26 @@
+<project>
+
+    <target name="clean">
+        <delete dir="bin"/>
+        <delete dir="jar"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="bin"/>
+        <javac srcdir="src" destdir="bin"/>
+    </target>
+
+    <target name="jar">
+        <mkdir dir="jar"/>
+	<jar destfile="jar/gui.jar" basedir="bin">
+            <manifest>
+                <attribute name="Main-Class" value="turing.gui.UserInterface"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="run">
+        <java jar="jar/gui.jar" fork="true"/>
+    </target>
+
+</project>

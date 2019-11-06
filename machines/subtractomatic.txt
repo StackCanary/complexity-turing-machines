@@ -1,0 +1,100 @@
+states 25
+s0
+s1
+s2
+s3
+s4
+s5
+s6
+s7
+s8
+s9
+s10
+s11
+s12
+s13
+s14
+s15
+s16
+s17
+s18
+s19
+s20
+s21
+s22
+s23 +
+s24
+alphabet 0 1 #
+s0 _ s1 _ S
+s0 # s1 # S
+s0 0 s12 _ R
+s12 0 s12 _ R
+s12 1 s2 1 S
+s12 # s2 # S
+s0 1 s2 1 R
+s2 _ s1 _ S
+s2 0 s2 0 R
+s2 1 s2 1 R
+s2 # s3 # R
+s3 _ s1 _ S
+s3 # s1 # S
+s3 0 s4 0 R
+s3 1 s4 1 R
+s4 0 s4 0 R
+s4 1 s4 1 R
+s4 # s5 # L
+s5 0 s5 0 L
+s5 1 s6 0 R
+s5 # s13 # R
+s6 0 s6 1 R
+s6 # s7 # R
+s7 _ s1 _ S
+s7 0 s8 0 R
+s7 1 s8 1 R
+s8 0 s8 0 R
+s8 1 s8 1 R
+s8 _ s9 _ L
+s9 0 s9 0 L
+s9 1 s10 0 R
+s9 # s24 # L
+s10 0 s10 1 R
+s10 _ s11 _ L
+s11 0 s11 0 L
+s11 1 s11 1 L
+s11 # s5 # L
+s13 0 s13 # R
+s13 # s14 # R
+s14 0 s14 # R
+s14 1 s15 1 S
+s14 _ s15 _ S
+s15 0 s15 0 R
+s15 1 s15 1 R
+s15 # s15 # R
+s15 _ s16 _ L
+s16 0 s17 _ L
+s16 1 s18 _ L
+s16 # s21 # L
+s17 0 s17 0 L
+s17 1 s17 1 L
+s17 # s19 # L
+s18 0 s18 0 L
+s18 1 s18 1 L
+s18 # s20 # L
+s19 # s19 # L
+s19 0 s15 # R
+s19 1 s1 1 S
+s19 _ s1 _ S
+s20 # s20 # L
+s20 1 s15 # R
+s20 0 s1 0 S
+s20 _ s1 _ S
+s21 0 s21 0 L
+s21 1 s21 1 L
+s21 # s21 # L
+s21 _ s22 _ R
+s22 1 s1 1 S
+s22 0 s1 0 S
+s22 # s23 # S
+s24 0 s24 0 L
+s24 # s15 # R
+s24 1 s1 1 S
